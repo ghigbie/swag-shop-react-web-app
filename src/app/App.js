@@ -10,6 +10,20 @@ class App extends Component {
   constructor(props){
     super(props);
     this.loadData = this.loadData.bind(this);
+
+    this.state = {
+      products: []
+    };
+    productList = () => {
+      const list = this.state.products.map((product) => {
+         <div className="col-sm-4"
+              key={product._id}>
+              <Product title={product.title}
+                       price={product.price}
+                       imgUrl={product.imgUrl}/>
+         </div>
+      });
+    }
     this.loadData();
   }
 
