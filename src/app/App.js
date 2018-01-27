@@ -28,8 +28,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <div className="App-main">
-          <Product />
+        <div className="App-main container">
+          <Product price="123.23" 
+                   title="Cool Floating Cat" 
+                   imgUrl="http://r.ddmcdn.com/s_f/o_1/cx_462/cy_245/cw_1349/ch_1349/w_720/APL/uploads/2015/06/caturday-shutterstock_149320799.jpg"/>
         </div>
       </div>
     );

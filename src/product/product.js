@@ -8,12 +8,14 @@ class Product extends Component{
 
     render(){
         return(
-            <div className="card">
-                <img className="card-img-top" alt="Product"></img>
-                <div classNAme="card-block">
-                    <h4 classNAme="card-title"></h4>
-                    <p className="card-text">Price: $</p>
-                    <a href="#" className="btn btn-primary">Ad dto Wishlist</a>
+            <div className="card product-card">
+                <img className="card-img-top third" 
+                     src={this.props.imgUrl}
+                     alt="Product"></img>
+                <div className="card-block">
+                    <h4 className="card-title">{this.props.title}</h4>
+                    <p className="card-text">Price: ${this.props.title}</p>
+                    <a href="#" className="btn btn-primary">Add to Wishlist</a>
                 </div>
             </div>
         );
