@@ -4,7 +4,6 @@ import './product.css';
 class Product extends Component{
     constructor(props){
         super(props);
-
     }
 
     render(){
@@ -20,3 +19,5 @@ class Product extends Component{
         );
     }
 }
+
+export default Product;
